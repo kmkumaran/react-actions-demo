@@ -22,5 +22,5 @@ jobs:
         with:
           BRANCH: gh-pages # The branch the action should deploy to.
           FOLDER: build # The folder the action should deploy.
-          token: ${{ secrets.TEST }}
+          token: ${{ staging.TOKEN }}
           repository-name: kaverma/test
