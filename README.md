@@ -1,3 +1,5 @@
+[![Deploy to GitHub Pages Staging And Prod](https://github.com/kaverma/react-actions-demo/actions/workflows/deploy-prod.yml/badge.svg)](https://github.com/kaverma/react-actions-demo/actions/workflows/deploy-prod.yml)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
