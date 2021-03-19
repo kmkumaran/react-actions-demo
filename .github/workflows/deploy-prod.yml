@@ -20,6 +20,7 @@ jobs:
         
   build-and-deploy-staging:
     name: Deploy to Staging
+    needs: upload-artifact
     runs-on: ubuntu-latest
     environment: staging
     steps:
