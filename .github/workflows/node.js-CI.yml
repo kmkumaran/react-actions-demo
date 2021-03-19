@@ -35,7 +35,12 @@ jobs:
     runs-on: ubunutu-latest
     needs: build
     steps:
+    - uses: actions/checkout@v2
+    - name: npm install and build
+      run: |
+        npm install
+        npm run build
     - uses: actions/upload-artifact@v2
       with:
         name: my-artifact
-        path: public/
+        path: build/
