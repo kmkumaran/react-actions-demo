@@ -5,6 +5,19 @@ on:
         branches:
         - master
 jobs:
+  upload-artifact:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: npm install and build
+      run: |
+        npm install
+        npm run build
+    - uses: actions/upload-artifact@v2
+      with:
+        name: my-artifact
+        path: build/
+        
   build-and-deploy-staging:
     name: Deploy to Staging
     runs-on: ubuntu-latest
