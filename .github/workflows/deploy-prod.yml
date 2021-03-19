@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: staging
     steps:
-      - uses: actions/dowload-artifact@v2
+      - uses: actions/download-artifact@v2
         with:
           name: my-artifact
           path: build/
