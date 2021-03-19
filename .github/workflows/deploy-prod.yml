@@ -24,12 +24,15 @@ jobs:
     runs-on: ubuntu-latest
     environment: staging
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.1
+        
       - uses: actions/download-artifact@v2
         with:
           name: my-artifact
           path: build/
  
-      - name: Deploy 🚀
+      - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
           BRANCH: gh-pages # The branch the action should deploy to.
@@ -43,7 +46,7 @@ jobs:
     environment: prod
     needs: build-and-deploy-staging
     steps:
-      - name: Checkout 🛎️
+      - name: Checkout
         uses: actions/checkout@v2.3.1
  
       - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
