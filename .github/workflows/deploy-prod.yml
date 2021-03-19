@@ -6,6 +6,7 @@ on:
         - master
 jobs:
   build-and-deploy-staging:
+    name: Deploy to Staging
     runs-on: ubuntu-latest
     environment: staging
     steps:
@@ -26,8 +27,10 @@ jobs:
           repository-name: kaverma/actions-demo-staging
           
   build-and-deploy-prod:
+    name: Deploy to Production
     runs-on: ubuntu-latest
     environment: prod
+    needs: build-and-deploy-staging
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
