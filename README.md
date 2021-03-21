@@ -1,4 +1,4 @@
-[![Deploy to GitHub Pages Staging And Prod](https://github.com/kaverma/react-actions-demo/actions/workflows/deploy-prod.yml/badge.svg)](https://github.com/kaverma/react-actions-demo/actions/workflows/deploy-prod.yml)
+[![CI and CD](https://github.com/kaverma/react-actions-demo/actions/workflows/CI-CD.yml/badge.svg)](https://github.com/kaverma/react-actions-demo/actions/workflows/CI-CD.yml)
 
 <h1 align="center">CI/CD with GitHub Actions</h1>
 <h5 align="center">@kmkumaran @kaverma</h3>
