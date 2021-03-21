@@ -8,7 +8,8 @@ on:
 
 jobs:
 
-  build:
+  build-test:
+    name: Build and Test
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -25,6 +26,7 @@ jobs:
     - run: npm test
 
   upload-artifact:
+    needs: build-test
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
