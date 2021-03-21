@@ -1,5 +1,7 @@
 # Satellite Workshop Instructions: CI/CD with GitHub Actions
 
+Workflow 1 will focus on creating a CI workflow for our [app](Need link to this). At the end of this exercise we will learn a) How to create a new CI workflow b) About Workflow templates c) Using UI Action authoring Intellisense d) Configuring Action triggers and type of triggers e) About Job strategies f) Publishing to Packages  
+
 :bookmark: The following instructions will take on the assumption that you will be completing the steps on the GitHub UI. Feel free to use the terminal or any other GUIs you are comfortable with.
 
 
