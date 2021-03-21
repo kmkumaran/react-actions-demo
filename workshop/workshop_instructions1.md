@@ -35,7 +35,9 @@
 
 9. Upload the build directory to GitHub packages so this can be consumed or deployed. 
 
-11. Ensure that uploading of package happens only after the build and test step has succeeded for all node versions we are testing for
+10. Ensure that uploading of package happens only after the build and test step has succeeded for all node versions we are testing for
+
+11. Add status badge
 
 - **Knowledge Check**
 
